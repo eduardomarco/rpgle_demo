@@ -1,6 +1,6 @@
 [
 {
-    "name": "Deploy and build ",
+    "name": "Deploy and build 🔨",
     "environment": "pase",
     "extensions": [
         "GLOBAL"
