@@ -1,6 +1,6 @@
 
-BIN_LIB=MARCO
-LIBLIST=$(BIN_LIB) MARCO
+BIN_LIB=CMPSYS
+LIBLIST=$(BIN_LIB) MARCO_SQL
 SHELL=/QOpenSys/usr/bin/qsh
 
 all: depts.sqlrpgle employees.sqlrpgle

@@ -1,4 +1,4 @@
-
+**free
         Ctl-Opt DFTACTGRP(*no);
 
         Dcl-Pr Employees ExtPgm;
@@ -11,9 +11,7 @@
 
       //---------------------------------------------------------------*
 
-     Fdepts     CF   E             WorkStn Sfile(SFLDta:Rrn)
-     F                                     IndDS(WkStnInd)
-     F                                     InfDS(fileinfo)
+        Dcl-F depts WORKSTN Sfile(SFLDta:Rrn) IndDS(WkStnInd) InfDS(fileinfo);
 
           Dcl-S Exit Ind Inz(*Off);
 
@@ -34,15 +32,9 @@
           End-DS;
 
      DFILEINFO         DS
-     D  FILENM           *FILE
-     D  CPFID                 46     52
-     D  MBRNAM               129    138
-     D  FMTNAM               261    270
-     D  CURSED               370    371B 0
-     D  FUNKEY               369    369
-     D  SFLRRN_TOP           378    379B 0
-     D  SF_RRN               376    377I 0
-     D  SF_RCDS              380    381I 0
+        
+        Dcl-C FUNKEY     Pos(1));;
+        
 
       //---------------------------------------------------------------*
       *
